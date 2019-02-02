@@ -1,0 +1,138 @@
+/* Yellow Color : #fbc531 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------------------------*/
+/* Basic Setup */
+/*------------------------------*/
+
+html {
+    color: #ffffff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+/*------------------------------*/
+/* Reusable Components */
+/*------------------------------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /* top and bottom, left and right */
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-features {
+    color: black;
+}
+
+/*------------------------------*/
+/* HEADINGS */
+/*------------------------------*/
+h1,
+h2  {
+   
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+h1 {
+    margin-top:0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 250%;
+}
+
+h2 {
+
+}
+
+/*---------Buttons-------*/
+ .btn:link,
+ .btn:visited { /* unvisited and visited link, psuedo class */
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.5s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color:#fbc531;
+    border: solid 1px #fbc531;
+    color: #fff;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: solid 1px #fbc531;
+    color:  #fbc531;
+}
+
+.btn:hover, 
+.btn:active {
+    background-color: #a17703;
+    border: solid 0px #a17703;
+}
+/*------------------------------*/
+/* HEADER */
+/*------------------------------*/
+header {
+    background-image: linear-gradient(#0f0c0ce0, rgba(143, 89, 143, 0.137)), url('/resources/images/library-books.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .4s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fbc531;
+}
